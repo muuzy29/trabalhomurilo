@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="part2.css">
+    <title>Escolhas do Livro Interativo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Um novo dia!</h1>
+        <p>Há um belo dia la fora, oque te enche de determinação, Juma. Você acorda, e se ve em sua toca, más que cheiro é esse, você se pergunta...</p>
+        
+        <div class="choices">
+            <button onclick="escolha('trilha1')">Investigar</button>
+            <button onclick="escolha('trilha2')">Ignorar</button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script>
+        function escolha(trilha) {
+            const resultadoDiv = document.getElementById('resultado');
+            if (trilha === 'trilha1') {
+                resultadoDiv.innerHTML = "<h2>Você escolheu investigar.</h2><p>Você sai procurando algo que explicasse esse cheiro, e quando sai, vê ao longe, uma fumaça estranha e um cheiro indescritivel de queimada.</p>";
+            } else {
+                resultadoDiv.innerHTML = "<h2>Você escolheu ignorar.</h2><p>Você segue sua rotina diaria, ao sair para beber agua, você vê no reflexo da agua, fumaça.</p>";
+            }
+        }
+    </script>
+   
+   <center> <a class="btn" href="part3.html">    Próximo </a></center>
+</body>
+</html>

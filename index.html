@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ini.css">
+    <title>Livro Interativo</title>
+</head>
+<body>
+
+     
+
+    <header>
+        <h1> <font="Serifada"> Juma: Perigo na Amazônia </h1>
+        <nav>
+            <ul>
+                <h4> Uma historia emocionante e interativa!</h4>
+            
+            </ul>
+        </nav>
+    </header>
+    
+    <center> 
+        <main>
+        <section id="capitulo1">
+            <h2> <font="Cursiva">   A Introdução </h2>
+            <p>Este é o primeiro capítulo do nosso livro interativo.</p>
+
+            <a href="part1.html">  <button class="button-with-icon"> 
+                
+                <svg
+                  class="icon"
+                  id="Play"
+                  viewBox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="color000000 svgShape"
+                    fill="#ffffff"
+                    d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z"
+                  ></path>
+                </svg>
+                <span class="text">Iniciar</span>
+                
+            </button> </a>
+    
+    </center>
+
+   <center> 
+<img src="amz.jpeg">
+
+<h2> Amazônia é um bioma do Brasil, sendo o maior do país. Ele é definido como um dos mais ricos do mundo em biodiversidade.
+
+</h2>
+   </center>
+    <script>
+        function mostrarNota(notaId) {
+            const nota = document.getElementById(notaId);
+            nota.style.display = nota.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
